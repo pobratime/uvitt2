@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> OMG WTF </title>
+  <!-- BITAN JE RASPORED -->
+  <!-- BITAN JE REDOSLED OVERRAFUJU SE -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    /* selektor je sve ono na sta ce se primeniti svojstva koja navedemo */
+    /* svojstva su npr boja pozadine texta font itd itd */
+    /* vrednost je vrednost tog svojstva */
+    /* razlicite vrste selektora */
+
+    /* selektor{ */
+    /* svojstva1: vrenodst; */
+    /* komentari su drukciji wtf */
+
+    /* } */
+
+    /* POSTOJI HIJERARHIJA */
+    /* OD OPSTEG PA KA KLASI PA KA ID */
+
+    /* p { */
+      /* !importand kaze moras ovo da radis */
+      /* ko ovo ne radi taj je caci */
+      /* importand moze da overrajude prioritet*/
+      /* background-color: brown;
+      color: antiquewhite;
+    }
+
+    #paragraf {
+      background-color: chocolate;
+    }
+
+    span {
+      color: cornsilk;
+    }
+
+    .myClass {
+      background-color: aqua;
+    } */
+
+    /* NA PARAGRAFE KOJI SE NALAZE U DIVU */
+    /* div p {
+      text-align: end;
+    }
+
+    div p span {
+      background-color: yellowgreen;
+    } */
+
+    /* SAMO h6 koji imaju myClass */
+    /* h6.myClass {
+      text-align: end;
+    } */
+
+    /* h6,
+    h2 {
+      font-family: cursive;
+      letter-spacing: 10px;
+    } */
+
+    /* UKRATKO IMAMO PRAKTICNO BEZOBROJ KOMBINACIJA */
+  </style>
+</head>
+
+<body>
+  <!-- NASLOVI -->
+  <h1 class="myClass" title="MAKNI MISA KURVO"> OMG</h1>
+  <h2> manje</h2>
+  <!-- ... -->
+  <h6 class="myClass"> najmanje</h6>
+
+  <!-- PARAGRAFI -->
+  <p> LMAO2 </p>
+  <p> Lorem, <br> ipsum dolor sit amet consectetur adipisicing elit. Fuga totam
+    quia porro illum quasi pariatur quibusdam facere eos obcaecati at, dignissimos quae voluptates temporibus velit odio
+    harum natus aliquid non.</p>
+  <p> LMAO </p>
+  <hr>
+  <!-- ID SU JEDINSTVENI -->
+  <!-- KORISTI SE ZA CSS ZBOG NEKIH OSOIBA I KORISTI SE U JAVA SKRIPTU ZA DOHVATANJE -->
+  <p id="paragraf"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum accusantium minima, excepturi quo
+    esse vitae consequuntur eius eos? In ipsa consequuntur, itaque modi sequi sed! Harum tenetur explicabo ex porro.</p>
+
+  <hr>
+
+  <!-- DIV GRUPISE SADRZAJ -->
+  <!-- KLASE SE SLUZE DA SE STAVE NEKE OSOBINE I ONDA IDU OSOBINE SVIMA -->
+  <div class="myClass">
+    <p> Paragraf 1</p>
+    <p> Paragraf 2</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero culpa rem ipsum vel accusantium, minus similique
+      ullam laborum quo sit repellendus fuga quae architecto ex quisquam fugit? Vitae, ea modi.</p>
+  </div>
+
+  <!-- GRUPISANEJ -->
+  <nav class="myClass drugaKlasa trecaKlasa mozemoKOlkoOcemo">
+    <p> OVDE TURAM NEKI TEKST DA IVIMD KAKO CE DA GA OBOJI MRNJAAOOOOOOO</p>
+    <hr>
+    <hr>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur culpa iusto necessitatibus mollitia
+      voluptate aliquam temporibus eum laborum molestias illo recusandae nulla incidunt dicta voluptatem consequatur
+      dolor nemo, accusantium optio?</p>
+  </nav>
+  <header></header>
+  <footer></footer>
+
+  <div>
+    <p> <span> LMAO LMAO LMAO LMAO LMAO LMAO MLAOMs</span></p>
+  </div>
+
+  <!-- LINIJSKI ELEMENTI -->
+  <span> Neki span <br> mrnjao </span>
+
+</body>
+
+</html>

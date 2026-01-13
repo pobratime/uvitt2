@@ -1,0 +1,64 @@
+/* selektor je sve ono na sta ce se primeniti svojstva koja navedemo */
+/* svojstva su npr boja pozadine texta font itd itd */
+/* vrednost je vrednost tog svojstva */
+/* razlicite vrste selektora */
+
+/* selektor{ */
+/* svojstva1: vrenodst; */
+/* komentari su drukciji wtf */
+
+/* } */
+
+/* POSTOJI HIJERARHIJA */
+/* OD OPSTEG PA KA KLASI PA KA ID */
+
+p {
+  /* !importand kaze moras ovo da radis */
+  /* ko ovo ne radi taj je caci */
+  /* importand moze da overrajude prioritet*/
+  background-color: rgb(15, 144, 92);
+  color: antiquewhite;
+}
+
+#paragraf {
+  background-color: rgba(14, 125, 153, 0.6);
+}
+
+span {
+  color: cornsilk;
+}
+
+.myClass {
+  background-color: aqua;
+}
+
+div{
+  width: 80%;
+  font-style: italic;
+  /* width: 2em; */
+  /* width: 500px; */
+  /* width: 10cm; */
+  /* width: 5cm; */
+}
+
+/* NA PARAGRAFE KOJI SE NALAZE U DIVU */
+div p {
+  text-align: end;
+}
+
+div p span {
+  background-color: yellowgreen;
+}
+
+/* SAMO h6 koji imaju myClass */
+h6.myClass {
+  text-align: end;
+}
+
+h6,
+h2 {
+  font-family: cursive;
+  letter-spacing: 10px;
+}
+
+/* UKRATKO IMAMO PRAKTICNO BEZOBROJ KOMBINACIJA */

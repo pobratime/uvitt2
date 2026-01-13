@@ -1,0 +1,31 @@
+#main_div{
+  margin-top: 10%;
+  width:40%;
+  margin-left:30%;
+  margin-right: 30%;
+}
+
+#blokovi{
+  display:flex;
+  flex-direction: row;
+  gap: 20%;
+}
+
+.lista_dece{
+  width: 40%;
+  border-radius: 10px 10px 10px 10px;
+}
+
+td{
+  width:100%;
+}
+
+div form{
+  display:flex;
+  flex-direction: column;
+  margin:2%;
+}
+
+hr{
+  margin: 1%;
+}

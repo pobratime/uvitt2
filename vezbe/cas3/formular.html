@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    form{
+      background-color: pink;
+    }
+    input{
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <form method="get" action="">
+    <fieldset>
+    <input type="color" name="boja">
+    <input type="date" name="datum">    
+    <br>
+
+    <label for="imeId">Ime</label>
+    <input type="text" id="imeId" name="unosImena">
+    <br>
+
+    Prezime
+    <input type="text" placeholder="vase przime" name="unosPrezimena">
+    <br>
+
+    Sifra
+    <input type="password" name="unosSifra">
+    <br>
+
+    Mejl
+    <input type="email" name="unosImejl">
+    <br>
+    </fieldset>
+    <input type="radio" name="opcija" value="1"> 1
+    <input type="radio" name="opcija" value="2"> 2
+    <input type="radio" name="opcija" value="3" checked> 3
+    <br>
+
+    <input type="checkbox" value="pon" name="cekirano"> ponedeljak
+    <input type="checkbox" value="uto" name="cekirano"> utorak
+    <input type="checkbox" value="sre" name="cekirnao"> sreda
+    <br>
+
+    <input type="button" value="neko dugme" name="jelStisutno">
+    <br>
+
+    <input type="submit" value="sacuvaj" name="ajmoOpet">
+    <br>
+
+    <input type="reset" value="obrisi">
+    <br>
+
+    <select name="lista">
+      <optgroup label="osnovne boje">
+      <option value="r">prva</option>
+      <option value="g">druga</option>
+      <option value="b">trca</option>
+      </optgroup>
+
+    </select>
+    <br>
+
+    <textarea>
+      MRNJAO
+    </textarea>
+    <br>
+
+    <datalist id="auto">
+      <option value="red"></option>
+      <option value="green"></option>
+      <option value="blue"></option>
+    </datalist>
+    <br>
+
+    <input list="auto">
+
+  </form>
+</body>
+</html>

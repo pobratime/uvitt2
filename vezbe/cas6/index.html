@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    let objekat = {};
+    const student = {
+      indeks: "123/123",
+      'ime_prezime': "luka_ajdukovic",
+      visina: 190,
+      pozdraviSe: function(){
+        console.log("Zdravo");
+      },
+      predstaviSe: function(){
+        console.log(this.ime_prezime + " zdravo selam");
+      },
+      poruka: function(args){
+        console.log(this.ime_prezime + ": " + args)
+      }
+    }
+    console.log(student);
+    console.log(typeof student);
+    console.log(student.visina)
+    console.log(student['ime_prezime']);
+    student.pozdraviSe();
+    student.poruka("lmao sa porukom");
+    student.predstaviSe();
+    student['pozdraviSe']();
+
+    console.log(student.fakultet);
+    if('fakultet' in student){
+      console.log("IMA");
+    }else{
+      console.log("NEMA");
+    }
+
+    student.fakultet = "MATF";
+    console.log(student.fakultet);
+        if('fakultet' in student){
+      console.log("IMA");
+    }else{
+      console.log("NEMA");
+    }
+
+    console.log(student.indeks);
+    delete student.indeks;
+    console.log(student.indeks);
+    
+    console.log("--------------------");
+    for(let key in student){
+      console.log(key, student[key]);
+    }
+
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "mongoose": "^8.18.1",
+    "nodmeon": "^0.0.1-security"
+  }
+}

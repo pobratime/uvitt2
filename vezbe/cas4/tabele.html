@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table{
+      border: double blue 2px;
+      border-spacing: 5px;
+      empty-cells: hide;
+      border-collapse: collapse;
+      caption-side: bottom;
+    }
+    td, th{
+      border: dotted green 1px;
+      width: 50px;
+      /* height: 50px; */
+    }
+    #y{
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Naslov Tabele</caption>
+    <thead>
+      <tr>
+        <th>broj</th>
+        <th>slovo</th>
+        <th>koord</th>
+        <th>rimski</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>a</td>
+        <td>x</td>
+        <td>i</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>b</td>
+        <td id="y">y</td>
+        <td>ii</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>c</td>
+        <td>z</td>
+        <td>iii</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+    <tr>
+      <td rowspan="3">1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <!-- <td>1</td> -->
+      <td colspan="2" rowspan="2">2</td>
+      <!-- <td>3</td> -->
+      <!-- <td>4</td> -->
+    </tr>
+    <tr>
+      <td>1</td>
+      <!-- <td>2</td> -->
+      <td">3</td>
+      <!-- <td>4</td> -->
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+  </table>
+</body>
+</html>

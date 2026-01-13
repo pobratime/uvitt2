@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column ">
+  <div class="text-white" style="background-color:blueviolet;">
+    <h1 class="h1 my-5 mx-5">Welcome</h1>
+  </div>
+  <div class="d-flex justift-content-evenly my-3 gap-3">
+    <div class="flex-fill d-flex flex-column justift-content- gap-3 mx-3">
+      <button class="button bg-info border-0 text-white text-start">The Flight</button>
+      <button class="button bg-info border-0 text-white text-start">The City</button>
+      <button class="button bg-info border-0 text-white text-start">The Island</button>
+      <button class="button bg-info border-0 text-white text-start">The Food</button>
+    </div>
+    <div class="flex-fill">
+      <form class="form-control" method="post" action="/letovi">
+        <h1>The Flight</h1>
+        <div class="d-flex my-5 gap-5">
+          <div class="d-flex gap-2">
+            <label for="polaziste" class="form-label">From</label>
+            <input type="text" class="" name="polaziste" id="polaziste" placeholder="City or airport">
+          </div>
+          <div class="d-flex gap-2">
+            <label for="destinacija" class="form-label">To</label>
+            <input type="text" class="" name="destinacija" id="destinacija" placeholder="City or airport">
+          </div>
+        </div>
+
+        <div class="d-flex my-5 gap-5">
+          <div class="d-flex gap-2">
+            <label for="dolazak" class="form-label"> Depart</label>
+            <input type="date" name="dolazak" class="" id="dolazak">
+          </div>
+          <div class="d-flex gap-2">
+            <label for="povratak" class="form-label"> Return </label>
+            <input type="date" name="povratak" class="" id="povratak">
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap gap-3 mb-3">
+          <label for="odrasli" class="form-label">Adults 12+</label>
+          <select class="" name="odrasli" id="odrasli">
+            <optgroup label="Adult_selector">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </optgroup>
+          </select>
+
+          <label for="deca" class="form-label">Children 2-11</label>
+          <select class="" name="deca" id="deca">
+            <optgroup label="Children_selector">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </optgroup>
+          </select>
+
+          <label for="bebe" class="form-label">Infants less than 2</label>
+          <select class="" name="bebe" id="bebe">
+            <optgroup label="Baby_Selection">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="d-flex my-5 gap-5">
+          <div class="d-flex gap-2">
+            <label for="kabina" class="form-label"> Cabin</label>
+            <select class="" name="kabina" id="kabina">
+              <optgroup label="Cabin_Selection">
+                <option value="Economy">Economy</option>
+                <option value="First Class">First Class</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="d-flex gap-2">
+            <input type="checkbox" name="direktan_let" id="direktna_let">
+            <label for="direktan_let" class="form-label">Direct flights</label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <button type="submit" class="">Search Flights</button>
+        </div>
+      </form>
+    </div>
+    <div class="flex-fill d-flex justify-content-center">
+      <div class="flex-fill d-flex flex-column text-center bg-info text-white justify-content-evenly h-75">
+        <div>
+          <h4>What?</h4>
+          <span>Plan your flight</span>
+        </div>
+        <div>
+          <h4>Where?</h4>
+          <span>Wherewer you want</span>
+        </div>
+        <div>
+          <h4>How?</h4>
+          <span>Using our page</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-7ZfL3F5K2e9Uz6ZtJbz0kO3xE3+2Fs2CBBzD9x2Q7Wn8bA3kV7mvX0C0i8s5zS4p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

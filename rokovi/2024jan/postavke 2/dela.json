@@ -1,0 +1,58 @@
+[
+  {
+    "ime": "Alisa",
+    "dobro": true,
+    "delo": "Pronašla put kući iz Zemlje čuda.",
+    "poeni": 8,
+    "pismo": "Želim ti srećne praznike! Ove godine bih volela da dobijem novu knjigu.",
+    "poslato": true
+  },
+  {
+    "ime": "Aurora",
+    "dobro": true,
+    "delo": "Pobedila zlu kletvu uz pomoć ljubavi.",
+    "poeni": 7,
+    "pismo": "Vredno sam učila i trudila se. Volela bih neku igračku ove godine.",
+    "poslato": true
+  },
+  {
+    "ime": "Bambi",
+    "dobro": true,
+    "delo": "Naučio da se snađe u teškim situacijama.",
+    "poeni": 6,
+    "pismo": "Zahvalna sam na svemu i volela bih da obraduješ i moju porodicu.",
+    "poslato": true
+  },
+  {
+    "ime": "Baymax",
+    "dobro": true,
+    "delo": "Pomogao ljudima u nevolji i pružio podršku.",
+    "poeni": 10,
+    "pismo": "Zahvalna sam na svemu i volela bih da obraduješ i moju porodicu.",
+    "poslato": false
+  },
+  {
+    "ime": "Dambo",
+    "dobro": true,
+    "delo": "Postao heroj cirkusa uprkos zadirkivanju.",
+    "poeni": 7,
+    "pismo": "Zahvalna sam na svemu i volela bih da obraduješ i moju porodicu.",
+    "poslato": false
+  },
+    {
+    "ime": "Hades",
+    "delo": "Pokušao da preuzme Olimp.",
+    "poeni": -8,
+    "dobro": false,
+    "pismo": "",
+    "poslato": false
+  },
+  {
+    "ime": "Sid",
+    "delo": "Mučio igračke iz dosade.",
+    "poeni": -7,
+    "dobro": false,
+    "pismo": "",
+    "poslato": false
+  }
+]

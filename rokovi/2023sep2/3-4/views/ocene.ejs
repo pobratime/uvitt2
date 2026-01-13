@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-vA0IGyQbgkeFyXABx+Yj1/6LC9M6M03Pq65IjZ57sXxA7xjz3f6CkN5J0JvZ3QdH" crossorigin="anonymous">
+</head>
+<body>
+  <img src="<%= trazeno.slika%>">
+  <span><%= trazeno.imePrezime%></span>
+  <div>
+    <% for(let i = 0; i < trazeno.ocene.length; i++ ) { %>
+      <span> <%= trazeno.ocene[i].predmet%></span>
+      <span> <%= trazeno.ocene[i].ocena%></span>
+      <br>
+    <% } %>
+  </div>
+  <form class="form-control" method="post" action="/unos">
+    <input type="hidden" name="imePrezime" value="<%= trazeno.imePrezime %>">
+    <input type="text" class="form-control" name="predmet">
+    <input type="number" class="form-control" name="ocena">
+    <button type="submit" class="btn btn-primary form-control">UNESI</button>
+  </form>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-7ZfL3F5K2e9Uz6ZtJbz0kO3xE3+2Fs2CBBzD9x2Q7Wn8bA3kV7mvX0C0i8s5zS4p" crossorigin="anonymous"></script>
+</body>
+</html>
